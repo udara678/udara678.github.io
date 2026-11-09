@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Udara Hansana | DevOps & Cloud Engineer Intern</title>
+  <meta name="description" content="Portfolio of K.A. Udara Hansana Kodikara - DevOps Engineer Intern, IT Undergraduate at ITUM. Containerization, CI/CD, Linux, Docker, Automation.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"Fira Code"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              cyan: '#06b6d4',
+              emerald: '#10b981',
+              dark: '#0B0F19',
+              darker: '#060911',
+              card: '#111827',
+              border: '#1f2937'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #060911;
+      color: #e2e8f0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .glow-cyan {
+      box-shadow: 0 0 30px -5px rgba(6, 182, 212, 0.25);
+    }
+    .glow-emerald {
+      box-shadow: 0 0 30px -5px rgba(16, 185, 129, 0.25);
+    }
+    .bg-grid {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+    .terminal-glow {
+      box-shadow: 0 10px 40px -10px rgba(6, 182, 212, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-brand-darker text-slate-200 antialiased selection:bg-brand-cyan selection:text-black">
+
+  <!-- Background Decorative Grid -->
+  <div class="fixed inset-0 bg-grid pointer-events-none z-0"></div>
+  <div class="fixed top-0 left-1/4 w-96 h-96 bg-brand-cyan/10 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="fixed bottom-10 right-1/4 w-96 h-96 bg-brand-emerald/10 rounded-full blur-3xl pointer-events-none"></div>
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-brand-darker/80 border-b border-brand-border/60">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 group">
+        <span class="w-3 h-3 rounded-full bg-brand-cyan animate-pulse"></span>
+        <span class="font-mono font-bold text-lg text-white group-hover:text-brand-cyan transition-colors">
+          udara<span class="text-brand-cyan">.devops</span>
+        </span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-brand-cyan transition-colors">About</a>
+        <a href="#skills" class="hover:text-brand-cyan transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-brand-cyan transition-colors">Projects</a>
+        <a href="#education" class="hover:text-brand-cyan transition-colors">Education</a>
+        <a href="#contact" class="hover:text-brand-cyan transition-colors">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="./assets/K_A_Udara_Hansana_Kodikara_CV.docx" download class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold bg-brand-cyan/10 text-brand-cyan border border-brand-cyan/30 hover:bg-brand-cyan hover:text-black transition-all">
+          <i data-lucide="download" class="w-3.5 h-3.5"></i>
+          <span>Resume CV</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-12 space-y-24">
+
+    <!-- HERO SECTION -->
+    <section id="about" class="pt-8 pb-12 flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
+      <!-- Left Info -->
+      <div class="flex-1 space-y-6 text-center lg:text-left">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          Available for 6-Month DevOps Internship
+        </div>
+        
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+          Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan via-teal-300 to-brand-emerald">Udara Hansana</span>
+        </h1>
+        
+        <p class="text-lg sm:text-xl text-slate-400 font-medium">
+          DevOps & Cloud Engineer Intern | IT Undergraduate at <span class="text-slate-200 font-semibold">ITUM</span>
+        </p>
+        
+        <p class="text-slate-400 max-w-2xl leading-relaxed">
+          Passionate about bridging development and operations through automated CI/CD pipelines, container orchestration with Docker, and bulletproof Linux systems. Focused on shipping software reliably with zero-downtime and clean architectures.
+        </p>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+          <a href="#projects" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold bg-brand-cyan text-slate-950 hover:bg-cyan-400 shadow-lg shadow-cyan-500/20 transition-all">
+            <i data-lucide="layers" class="w-4 h-4"></i>
+            View Projects
+          </a>
+          <a href="https://github.com/udara678" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold bg-slate-800/80 hover:bg-slate-700 text-white border border-slate-700 transition-all">
+            <i data-lucide="github" class="w-4 h-4"></i>
+            GitHub Profile
+          </a>
+          <a href="https://linkedin.com/in/udara-hansana" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold bg-[#0A66C2]/20 hover:bg-[#0A66C2]/30 text-[#0A66C2] border border-[#0A66C2]/40 transition-all">
+            <i data-lucide="linkedin" class="w-4 h-4"></i>
+            LinkedIn
+          </a>
+        </div>
+
+        <!-- Quick Contacts Pill -->
+        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs font-mono text-slate-400 pt-2">
+          <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-cyan"></i> Colombo / Remote</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="mail" class="w-3.5 h-3.5 text-brand-cyan"></i> udarahansana2001@gmail.com</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="phone" class="w-3.5 h-3.5 text-brand-cyan"></i> +94 70 210 1653</span>
+        </div>
+      </div>
+
+      <!-- Right Photo Card -->
+      <div class="relative group">
+        <div class="absolute -inset-1 bg-gradient-to-r from-brand-cyan to-brand-emerald rounded-3xl blur-xl opacity-30 group-hover:opacity-60 transition duration-700"></div>
+        <div class="relative w-64 h-80 sm:w-72 sm:h-96 rounded-2xl overflow-hidden border-2 border-slate-700/60 shadow-2xl bg-slate-900">
+          <img 
+            src="./assets/profile.jpg" 
+            alt="K.A. Udara Hansana Kodikara" 
+            class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4 text-center">
+            <p class="text-sm font-semibold text-white">Udara Hansana Kodikara</p>
+            <p class="text-xs text-brand-cyan font-mono">DevOps & Cloud Enthusiast</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TERMINAL SHOWCASE -->
+    <section class="max-w-3xl mx-auto">
+      <div class="rounded-2xl border border-brand-border bg-slate-950/90 shadow-2xl terminal-glow overflow-hidden font-mono text-xs sm:text-sm">
+        <!-- Terminal Header -->
+        <div class="px-4 py-3 bg-slate-900/80 border-b border-brand-border flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+            <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+            <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+            <span class="ml-2 text-xs text-slate-400">udara@ubuntu-server: ~/devops</span>
+          </div>
+          <span class="text-xs text-brand-cyan">bash v5.2</span>
+        </div>
+        <!-- Terminal Body -->
+        <div class="p-5 space-y-3 text-slate-300">
+          <div>
+            <span class="text-emerald-400">udara@ubuntu:~$</span> <span class="text-white">whoami</span>
+            <p class="text-slate-400 pl-4">K.A. Udara Hansana Kodikara (2nd Year IT Undergraduate at ITUM)</p>
+          </div>
+          <div>
+            <span class="text-emerald-400">udara@ubuntu:~$</span> <span class="text-white">docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"</span>
+            <pre class="text-xs text-brand-cyan/90 pl-4 mt-1 overflow-x-auto">
+NAMES                  STATUS          PORTS
+pausepulse-nginx       Up 18 hours     0.0.0.0:80->80/tcp
+pausepulse-backend     Up 18 hours     0.0.0.0:5000->5000/tcp
+microlink-gateway      Up 3 days       0.0.0.0:8000->8000/tcp
+microlink-postgres     Up 3 days (healthy) 5432/tcp
+microlink-redis        Up 3 days       6379/tcp</pre>
+          </div>
+          <div>
+            <span class="text-emerald-400">udara@ubuntu:~$</span> <span class="text-white">git log -1 --pretty=format:"%h - %an: %s"</span>
+            <p class="text-slate-400 pl-4"><span class="text-emerald-400">ab27ce1</span> - udara678: docs: add CI/CD passing badge and update container architecture</p>
+          </div>
+          <div class="flex items-center gap-1 text-slate-400">
+            <span class="text-emerald-400">udara@ubuntu:~$</span> <span class="text-white">./deploy-pipeline.sh --status</span>
+            <span class="w-2 h-4 bg-brand-cyan inline-block animate-pulse ml-1"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section id="skills" class="space-y-8">
+      <div class="text-center space-y-2">
+        <h2 class="text-3xl font-bold text-white tracking-tight">Technical Arsenal</h2>
+        <p class="text-sm text-slate-400 max-w-xl mx-auto">Core technologies and tools I utilize for automating software lifecycles and managing container environments.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Skill 1: Containers -->
+        <div class="p-6 rounded-2xl bg-brand-card/70 border border-brand-border/80 hover:border-brand-cyan/50 transition-all hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-brand-cyan flex items-center justify-center mb-4">
+            <i data-lucide="container" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Containerization</h3>
+          <p class="text-sm text-slate-400 mb-4">Multi-service orchestration, isolated environments, and production packaging.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-cyan-300">Docker</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-cyan-300">Docker Compose</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-cyan-300">Multi-Stage Builds</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-cyan-300">Healthchecks</span>
+          </div>
+        </div>
+
+        <!-- Skill 2: CI/CD -->
+        <div class="p-6 rounded-2xl bg-brand-card/70 border border-brand-border/80 hover:border-brand-emerald/50 transition-all hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-brand-emerald flex items-center justify-center mb-4">
+            <i data-lucide="git-branch" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">CI/CD & Automation</h3>
+          <p class="text-sm text-slate-400 mb-4">Automating testing, linting, build pipelines, and automated artifact delivery.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-emerald-300">GitHub Actions</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-emerald-300">Matrix Workflows</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-emerald-300">Git / GitHub</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-emerald-300">Automated Builds</span>
+          </div>
+        </div>
+
+        <!-- Skill 3: Linux -->
+        <div class="p-6 rounded-2xl bg-brand-card/70 border border-brand-border/80 hover:border-brand-cyan/50 transition-all hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-brand-cyan flex items-center justify-center mb-4">
+            <i data-lucide="terminal" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Linux & Scripting</h3>
+          <p class="text-sm text-slate-400 mb-4">Server system administration, process monitoring, and automation scripts.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-cyan-300">Ubuntu / Debian</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-cyan-300">Bash Scripting</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-cyan-300">Storage & Processes</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-cyan-300">SSH & Systemd</span>
+          </div>
+        </div>
+
+        <!-- Skill 4: Web & Proxy -->
+        <div class="p-6 rounded-2xl bg-brand-card/70 border border-brand-border/80 hover:border-brand-emerald/50 transition-all hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-brand-emerald flex items-center justify-center mb-4">
+            <i data-lucide="network" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Networking & Proxies</h3>
+          <p class="text-sm text-slate-400 mb-4">Reverse proxy routing, port mapping, and handling microservices ingress.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-emerald-300">Nginx</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-emerald-300">Reverse Proxy</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-emerald-300">Port Routing</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-emerald-300">REST APIs</span>
+          </div>
+        </div>
+
+        <!-- Skill 5: Databases -->
+        <div class="p-6 rounded-2xl bg-brand-card/70 border border-brand-border/80 hover:border-brand-cyan/50 transition-all hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-brand-cyan flex items-center justify-center mb-4">
+            <i data-lucide="database" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Databases & Caching</h3>
+          <p class="text-sm text-slate-400 mb-4">Database setup, multi-DB entrypoint scripting, and in-memory caching.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-cyan-300">PostgreSQL</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-cyan-300">Redis</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-cyan-300">SQLite</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-cyan-300">Prisma ORM</span>
+          </div>
+        </div>
+
+        <!-- Skill 6: Development -->
+        <div class="p-6 rounded-2xl bg-brand-card/70 border border-brand-border/80 hover:border-brand-emerald/50 transition-all hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-brand-emerald flex items-center justify-center mb-4">
+            <i data-lucide="code" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Web Development</h3>
+          <p class="text-sm text-slate-400 mb-4">Full-stack development capabilities ensuring seamless dev-to-ops alignment.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-emerald-300">TypeScript</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-emerald-300">React</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-emerald-300">Node.js / Express</span>
+            <span class="px-2.5 py-1 text-xs font-mono rounded-md bg-slate-800 text-emerald-300">Tailwind CSS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects" class="space-y-10">
+      <div class="text-center space-y-2">
+        <h2 class="text-3xl font-bold text-white tracking-tight">Featured Projects</h2>
+        <p class="text-sm text-slate-400 max-w-xl mx-auto">Hands-on DevOps implementations, container orchestrations, and automated pipelines.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- PROJECT 1: PausePulse -->
+        <div class="p-7 rounded-2xl bg-brand-card/90 border border-brand-border hover:border-brand-cyan/60 transition-all flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-brand-cyan/10 text-brand-cyan border border-brand-cyan/20">
+                <i data-lucide="activity" class="w-3.5 h-3.5"></i>
+                DevOps & SaaS App
+              </span>
+              <!-- Live CI/CD Badge -->
+              <a href="https://github.com/udara678/pausepulse/actions" target="_blank" class="hover:opacity-80 transition-opacity">
+                <img src="https://github.com/udara678/pausepulse/actions/workflows/ci-cd.yml/badge.svg" alt="CI/CD Status" class="rounded">
+              </a>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white group-hover:text-brand-cyan transition-colors">
+              PausePulse — CI/CD Pipeline & Containerized Platform
+            </h3>
+
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Engineered an automated end-to-end CI/CD pipeline using GitHub Actions, containerized full-stack services with multi-stage Docker builds, and routed traffic via Nginx reverse proxy.
+            </p>
+
+            <ul class="text-xs text-slate-300 space-y-2 font-mono">
+              <li class="flex items-start gap-2">
+                <span class="text-brand-cyan">▹</span>
+                <span><strong>Automated CI/CD:</strong> Validates UI builds, backend TypeScript compilation, and tests Docker builds on every push to main.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-brand-cyan">▹</span>
+                <span><strong>Nginx Reverse Proxy:</strong> External traffic routed via Port 80, proxying API requests to internal backend container.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-brand-cyan">▹</span>
+                <span><strong>Multi-Stage Builds:</strong> Optimized production images for reduced attack surface and faster deployments.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6 border-t border-brand-border/60 mt-6 flex items-center justify-between">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 text-xs font-mono rounded bg-slate-800 text-slate-300">Docker</span>
+              <span class="px-2 py-0.5 text-xs font-mono rounded bg-slate-800 text-slate-300">GitHub Actions</span>
+              <span class="px-2 py-0.5 text-xs font-mono rounded bg-slate-800 text-slate-300">Nginx</span>
+              <span class="px-2 py-0.5 text-xs font-mono rounded bg-slate-800 text-slate-300">TypeScript</span>
+            </div>
+            <a href="https://github.com/udara678/pausepulse" target="_blank" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-cyan hover:underline">
+              <span>Repository</span>
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: MicroLink -->
+        <div class="p-7 rounded-2xl bg-brand-card/90 border border-brand-border hover:border-brand-emerald/60 transition-all flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                <i data-lucide="boxes" class="w-3.5 h-3.5"></i>
+                Microservices Orchestration
+              </span>
+              <span class="text-xs font-mono text-slate-400">Final Year Project</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white group-hover:text-emerald-400 transition-colors">
+              MicroLink — 8 Microservices & DB Automation
+            </h3>
+
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Led the DevOps orchestration for a 4-member group project, containerizing 8 distinct microservices and databases with automated entrypoint scripts and healthchecks.
+            </p>
+
+            <ul class="text-xs text-slate-300 space-y-2 font-mono">
+              <li class="flex items-start gap-2">
+                <span class="text-brand-emerald">▹</span>
+                <span><strong>8 Containerized Services:</strong> Gateway, Auth, Shop, Navigation, Delivery orchestrated via single Docker Compose.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-brand-emerald">▹</span>
+                <span><strong>Multi-DB Entrypoint Hook:</strong> Custom bash script (<code class="text-emerald-300">init-multiple-dbs.sh</code>) initializing dedicated databases during startup.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-brand-emerald">▹</span>
+                <span><strong>Healthchecks:</strong> Configured <code class="text-emerald-300">pg_isready</code> condition dependencies to eliminate database connection race conditions.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6 border-t border-brand-border/60 mt-6 flex items-center justify-between">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 text-xs font-mono rounded bg-slate-800 text-slate-300">Docker Compose</span>
+              <span class="px-2 py-0.5 text-xs font-mono rounded bg-slate-800 text-slate-300">PostgreSQL</span>
+              <span class="px-2 py-0.5 text-xs font-mono rounded bg-slate-800 text-slate-300">Redis</span>
+              <span class="px-2 py-0.5 text-xs font-mono rounded bg-slate-800 text-slate-300">Bash</span>
+            </div>
+            <a href="https://github.com/udara678/microlink" target="_blank" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-emerald hover:underline">
+              <span>Repository</span>
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section id="education" class="space-y-8">
+      <div class="text-center space-y-2">
+        <h2 class="text-3xl font-bold text-white tracking-tight">Academic Background</h2>
+        <p class="text-sm text-slate-400">Formal IT studies and continuous self-learning.</p>
+      </div>
+
+      <div class="max-w-3xl mx-auto space-y-4">
+        <!-- Education Card -->
+        <div class="p-6 rounded-2xl bg-brand-card/70 border border-brand-border flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center shrink-0">
+              <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-white">National Diploma in Technology (NDT) in Information Technology</h3>
+              <p class="text-sm text-brand-cyan">Institute of Technology, University of Moratuwa (ITUM)</p>
+            </div>
+          </div>
+          <span class="px-3 py-1 text-xs font-mono rounded-full bg-slate-800 text-slate-300 border border-slate-700">
+            2024 – Present (2nd Year)
+          </span>
+        </div>
+
+        <!-- Self-Study Card -->
+        <div class="p-6 rounded-2xl bg-brand-card/70 border border-brand-border flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-brand-emerald/10 text-brand-emerald flex items-center justify-center shrink-0">
+              <i data-lucide="award" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-white">Continuous Learning & Professional Courses</h3>
+              <p class="text-sm text-slate-400">Docker Training for Beginners (KodeKloud) & Linux Administration</p>
+            </div>
+          </div>
+          <span class="px-3 py-1 text-xs font-mono rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+            Active Study
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & FOOTER -->
+    <section id="contact" class="p-8 sm:p-12 rounded-3xl bg-gradient-to-b from-slate-900 to-brand-darker border border-brand-border text-center space-y-8">
+      <div class="max-w-xl mx-auto space-y-3">
+        <h2 class="text-3xl font-extrabold text-white">Let's Connect & Collaborate!</h2>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          I am actively seeking an internship opportunity in <span class="text-slate-200 font-semibold">DevOps & Cloud Engineering</span> where I can apply automation, containerization, and clean infrastructure practices.
+        </p>
+      </div>
+
+      <!-- Quick Action Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <!-- Email -->
+        <a href="mailto:udarahansana2001@gmail.com" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold bg-brand-cyan text-slate-950 hover:bg-cyan-400 transition-all shadow-lg shadow-cyan-500/20">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          <span>Email Me</span>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/94702101653?text=Hi%20Udara,%20saw%20your%20DevOps%20portfolio" target="_blank" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold bg-[#25D366]/20 hover:bg-[#25D366]/30 text-[#25D366] border border-[#25D366]/40 transition-all">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>WhatsApp Chat</span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/udara-hansana" target="_blank" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold bg-[#0A66C2]/20 hover:bg-[#0A66C2]/30 text-[#0A66C2] border border-[#0A66C2]/40 transition-all">
+          <i data-lucide="linkedin" class="w-4 h-4"></i>
+          <span>LinkedIn</span>
+        </a>
+
+        <!-- Download CV -->
+        <a href="./assets/K_A_Udara_Hansana_Kodikara_CV.docx" download class="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition-all">
+          <i data-lucide="file-text" class="w-4 h-4"></i>
+          <span>Download CV</span>
+        </a>
+      </div>
+
+      <div class="pt-8 border-t border-brand-border/60 text-xs text-slate-500 font-mono flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p>© 2026 K.A. Udara Hansana Kodikara. All rights reserved.</p>
+        <p class="flex items-center gap-1.5">
+          <span>Built with Clean HTML5 & Tailwind CSS</span>
+          <span>•</span>
+          <span class="text-brand-cyan">Hosted on GitHub Pages</span>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
